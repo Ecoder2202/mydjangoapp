@@ -23,4 +23,6 @@ urlpatterns = [
 
     path('', include('registration.urls')),
     path('', include('contact.urls')),
+    path('', include('card.urls')),
+   
 ]
