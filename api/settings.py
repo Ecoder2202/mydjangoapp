@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-i2nv#7r&8=u81^#fp-uuhm%fx48iss3#@56v%)r=-st8$x1uqe'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'weekdayape.herokuapp.com']
-
 
 # Application definition
 
@@ -79,7 +79,7 @@ TEMPLATES = [
 CORS_ALLOWED_ORIGINS = [
 
 
-    "http://localhost:3000",
+    "http://localhost:3001",
 
 ]
 
@@ -138,3 +138,6 @@ STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = BASE_DIR/'uploads'
+MEDIA_URL = '/eze/'
